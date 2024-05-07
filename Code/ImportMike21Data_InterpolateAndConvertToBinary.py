@@ -50,7 +50,7 @@ def get_dfsu_data(filepath):
     time = ds.time
 
     # Remove burn-in period (10 days)
-    data_wd = data_wd[40:, :]
+    data_wd = data_wd[40:, :].values
     data_wd = np.float32(data_wd)  # Convert to float32
 
     time = time[40:]
