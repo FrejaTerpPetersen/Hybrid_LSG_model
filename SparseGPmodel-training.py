@@ -16,6 +16,7 @@ from EOF_Functions import CreateEOFobj, CreatePseudoECs, NorthsRule
 from Datamanagement_Functions import tuple2array
 
 start_time = time.monotonic()
+print("starting...")
 # %% Import data
 data = np.load('Managed_Data/Events_data/Binary_Data_Train_Events.npz', allow_pickle=True)
 
